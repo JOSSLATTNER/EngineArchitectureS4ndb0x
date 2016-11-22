@@ -1,0 +1,63 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<Project ToolsVersion="4.0" xmlns="http://schemas.microsoft.com/developer/msbuild/2003">
+  <ItemGroup>
+    <Filter Include="Quelldateien">
+      <UniqueIdentifier>{4FC737F1-C7A5-4376-A066-2A32D752A2FF}</UniqueIdentifier>
+      <Extensions>cpp;c;cc;cxx;def;odl;idl;hpj;bat;asm;asmx</Extensions>
+    </Filter>
+    <Filter Include="Headerdateien">
+      <UniqueIdentifier>{93995380-89BD-4b04-88EB-625FBE52EBFB}</UniqueIdentifier>
+      <Extensions>h;hh;hpp;hxx;hm;inl;inc;xsd</Extensions>
+    </Filter>
+    <Filter Include="Ressourcendateien">
+      <UniqueIdentifier>{67DA6AB6-F800-4c08-8B7A-83BB121AAD01}</UniqueIdentifier>
+      <Extensions>rc;ico;cur;bmp;dlg;rc2;rct;bin;rgs;gif;jpg;jpeg;jpe;resx;tiff;tif;png;wav;mfcribbon-ms</Extensions>
+    </Filter>
+    <Filter Include="Headerdateien\Scene">
+      <UniqueIdentifier>{2d33a44b-d906-4b1f-afcf-3ea278107a09}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="Quelldateien\Scene">
+      <UniqueIdentifier>{1925a5b6-4398-4679-a9a3-11fa4af303ad}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="Headerdateien\NewFilter1">
+      <UniqueIdentifier>{e6f3677c-effc-4b4d-b9ea-802f41fc6d82}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="Headerdateien\Scene\Object">
+      <UniqueIdentifier>{de606140-06ce-432c-8271-bd75fcfc1a07}</UniqueIdentifier>
+    </Filter>
+  </ItemGroup>
+  <ItemGroup>
+    <ClCompile Include="CCore.cpp">
+      <Filter>Quelldateien</Filter>
+    </ClCompile>
+    <ClCompile Include="SceneManager.cpp">
+      <Filter>Quelldateien\Scene</Filter>
+    </ClCompile>
+    <ClCompile Include="Scene.cpp">
+      <Filter>Quelldateien\Scene</Filter>
+    </ClCompile>
+    <ClCompile Include="SceneObjekt.cpp">
+      <Filter>Quelldateien\Scene</Filter>
+    </ClCompile>
+  </ItemGroup>
+  <ItemGroup>
+    <ClInclude Include="CCore.h">
+      <Filter>Headerdateien</Filter>
+    </ClInclude>
+    <ClInclude Include="CDevice.h">
+      <Filter>Headerdateien</Filter>
+    </ClInclude>
+    <ClInclude Include="Scene.h">
+      <Filter>Headerdateien\Scene</Filter>
+    </ClInclude>
+    <ClInclude Include="SceneManager.h">
+      <Filter>Headerdateien\Scene</Filter>
+    </ClInclude>
+    <ClInclude Include="SceneObjekt.h">
+      <Filter>Headerdateien\Scene\Object</Filter>
+    </ClInclude>
+    <ClInclude Include="IComponent.h">
+      <Filter>Headerdateien\Scene\Object</Filter>
+    </ClInclude>
+  </ItemGroup>
+</Project>

@@ -1,0 +1,41 @@
+﻿
+Microsoft Visual Studio Solution File, Format Version 12.00
+# Visual Studio 14
+VisualStudioVersion = 14.0.25420.1
+MinimumVisualStudioVersion = 10.0.40219.1
+Project("{8BC9CEB8-8B4A-11D0-8D11-00A0C91BC942}") = "EngineArchitctureTest", "EngineArchitctureTest\EngineArchitctureTest.vcxproj", "{C2682DAE-A6C3-46EC-A659-40C8ABA372FA}"
+EndProject
+Project("{8BC9CEB8-8B4A-11D0-8D11-00A0C91BC942}") = "ApplicationArchitectureTest", "ApplicationArchitectureTest\ApplicationArchitectureTest.vcxproj", "{CBAA410A-34FD-42CB-8742-4B02123B3B2A}"
+	ProjectSection(ProjectDependencies) = postProject
+		{C2682DAE-A6C3-46EC-A659-40C8ABA372FA} = {C2682DAE-A6C3-46EC-A659-40C8ABA372FA}
+	EndProjectSection
+EndProject
+Global
+	GlobalSection(SolutionConfigurationPlatforms) = preSolution
+		Debug|x64 = Debug|x64
+		Debug|x86 = Debug|x86
+		Release|x64 = Release|x64
+		Release|x86 = Release|x86
+	EndGlobalSection
+	GlobalSection(ProjectConfigurationPlatforms) = postSolution
+		{C2682DAE-A6C3-46EC-A659-40C8ABA372FA}.Debug|x64.ActiveCfg = Debug|x64
+		{C2682DAE-A6C3-46EC-A659-40C8ABA372FA}.Debug|x64.Build.0 = Debug|x64
+		{C2682DAE-A6C3-46EC-A659-40C8ABA372FA}.Debug|x86.ActiveCfg = Debug|Win32
+		{C2682DAE-A6C3-46EC-A659-40C8ABA372FA}.Debug|x86.Build.0 = Debug|Win32
+		{C2682DAE-A6C3-46EC-A659-40C8ABA372FA}.Release|x64.ActiveCfg = Release|x64
+		{C2682DAE-A6C3-46EC-A659-40C8ABA372FA}.Release|x64.Build.0 = Release|x64
+		{C2682DAE-A6C3-46EC-A659-40C8ABA372FA}.Release|x86.ActiveCfg = Release|Win32
+		{C2682DAE-A6C3-46EC-A659-40C8ABA372FA}.Release|x86.Build.0 = Release|Win32
+		{CBAA410A-34FD-42CB-8742-4B02123B3B2A}.Debug|x64.ActiveCfg = Debug|x64
+		{CBAA410A-34FD-42CB-8742-4B02123B3B2A}.Debug|x64.Build.0 = Debug|x64
+		{CBAA410A-34FD-42CB-8742-4B02123B3B2A}.Debug|x86.ActiveCfg = Debug|Win32
+		{CBAA410A-34FD-42CB-8742-4B02123B3B2A}.Debug|x86.Build.0 = Debug|Win32
+		{CBAA410A-34FD-42CB-8742-4B02123B3B2A}.Release|x64.ActiveCfg = Release|x64
+		{CBAA410A-34FD-42CB-8742-4B02123B3B2A}.Release|x64.Build.0 = Release|x64
+		{CBAA410A-34FD-42CB-8742-4B02123B3B2A}.Release|x86.ActiveCfg = Release|Win32
+		{CBAA410A-34FD-42CB-8742-4B02123B3B2A}.Release|x86.Build.0 = Release|Win32
+	EndGlobalSection
+	GlobalSection(SolutionProperties) = preSolution
+		HideSolutionNode = FALSE
+	EndGlobalSection
+EndGlobal
