@@ -1,7 +1,7 @@
 #pragma once
 #include <vector>
 #include <functional>
-
+#include "IIdentifiable.h"
 #include "IComponent.h"
 
 
@@ -17,7 +17,7 @@ namespace Erupti0n
 
 	typedef std::function<void(IComponent*)> t_ComponentAddCallBack;
 
-	class CSceneObject
+	class CSceneObject : public IIdentifiable
 	{
 	private:
 		vector Transform;

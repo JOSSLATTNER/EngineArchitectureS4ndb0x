@@ -5,20 +5,21 @@
 namespace Erupti0n
 {
 	CSceneManager::CSceneManager()
-		: m_SceneIdCounter(0)
-	{
-
-	}
-
+	{}
 
 	CSceneManager::~CSceneManager()
-	{
-	}
+	{}
 
 	void CSceneManager::AddScene(CScene& a_rScene)
 	{
-		a_rScene.SetId(++this->m_SceneIdCounter);
+		this->m_pScenes[a_rScene.GetID()] = &a_rScene;
 
-		this->m_pScenes[m_SceneIdCounter] = &a_rScene;
+		if (!this->m_pCurrentScene)
+			m_pCurrentScene = &a_rScene;
+	}
+
+	void CSceneManager::Update()
+	{
+		this->m_pCurrentScene->Update();
 	}
 }

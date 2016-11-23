@@ -9,9 +9,8 @@ namespace Erupti0n
 	class CCore
 	{
 	private:
-		CSceneManager* m_pSceneManager;
-
-		std::unordered_map<size_t, void*> m_Services;
+		std::unordered_map<size_t, IService*> m_pServices;
+		std::vector<IUpdateable*> m_pUpdateableServices;
 
 	public:
 		CCore();
@@ -23,16 +22,29 @@ namespace Erupti0n
 		{
 			size_t classHash = typeid(C).hash_code();
 			std::cout << "Try to Get Service with typeID: " << typeid(C).hash_code() << std::endl;
-			if (m_Services[classHash])
+			if (m_pServices[classHash])
 			{
 				std::cout << "Services exist!" << std::endl;
-				return (C*)m_Services[classHash];
+				return (C*)m_pServices[classHash];
 			}
-			std::cout << "Services needs to be created!" << std::endl;
-			m_Services[classHash] = new C();
+			else
+			{
+				std::cout << "Services needs to be created!" << std::endl;
+				auto service = new C();
+
+				m_pServices[classHash] = service;
+
+				if (dynamic_cast<IUpdateable*>(service))
+				{
+					this->m_pUpdateableServices.push_back(static_cast<IUpdateable*>(service));
+				}
+			}
+
 			
-			return (C*)m_Services[classHash];
+			return (C*)m_pServices[classHash];
 		};
+
+		void Run();
 	};
 
 }

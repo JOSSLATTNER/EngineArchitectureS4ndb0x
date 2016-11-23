@@ -115,6 +115,11 @@
   </ItemDefinitionGroup>
   <ItemGroup>
     <ClCompile Include="CCore.cpp" />
+    <ClCompile Include="CMeshComponent.cpp" />
+    <ClCompile Include="CRenderComponent.cpp" />
+    <ClCompile Include="CTestUpdateComponent.cpp" />
+    <ClCompile Include="IComponent.cpp" />
+    <ClCompile Include="IIdentifiable.cpp" />
     <ClCompile Include="Scene.cpp" />
     <ClCompile Include="SceneManager.cpp" />
     <ClCompile Include="SceneObjekt.cpp" />
@@ -122,7 +127,13 @@
   <ItemGroup>
     <ClInclude Include="CCore.h" />
     <ClInclude Include="CDevice.h" />
+    <ClInclude Include="CMeshComponent.h" />
+    <ClInclude Include="CTestUpdateComponent.h" />
     <ClInclude Include="IComponent.h" />
+    <ClInclude Include="IIdentifiable.h" />
+    <ClInclude Include="CRenderComponent.h" />
+    <ClInclude Include="IService.h" />
+    <ClInclude Include="IUpdateable.h" />
     <ClInclude Include="Scene.h" />
     <ClInclude Include="SceneManager.h" />
     <ClInclude Include="SceneObjekt.h" />

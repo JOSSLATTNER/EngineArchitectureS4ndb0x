@@ -19,11 +19,23 @@
     <Filter Include="Quelldateien\Scene">
       <UniqueIdentifier>{1925a5b6-4398-4679-a9a3-11fa4af303ad}</UniqueIdentifier>
     </Filter>
-    <Filter Include="Headerdateien\NewFilter1">
-      <UniqueIdentifier>{e6f3677c-effc-4b4d-b9ea-802f41fc6d82}</UniqueIdentifier>
-    </Filter>
     <Filter Include="Headerdateien\Scene\Object">
       <UniqueIdentifier>{de606140-06ce-432c-8271-bd75fcfc1a07}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="Headerdateien\Scene\Object\Components">
+      <UniqueIdentifier>{29550936-81ad-4a9d-9631-fed7e0b73e3f}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="Quelldateien\Scene\Object">
+      <UniqueIdentifier>{a1564c29-cb68-4d56-a74e-a3f2238cd8d3}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="Quelldateien\Scene\Object\Components">
+      <UniqueIdentifier>{fc1d4b21-b60a-433d-ad5e-043c519d0b87}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="Headerdateien\Utils">
+      <UniqueIdentifier>{e6f3677c-effc-4b4d-b9ea-802f41fc6d82}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="Quelldateien\Utils">
+      <UniqueIdentifier>{f1e6b2a3-ce57-4472-82f9-b1d163ecb0d5}</UniqueIdentifier>
     </Filter>
   </ItemGroup>
   <ItemGroup>
@@ -37,7 +49,22 @@
       <Filter>Quelldateien\Scene</Filter>
     </ClCompile>
     <ClCompile Include="SceneObjekt.cpp">
-      <Filter>Quelldateien\Scene</Filter>
+      <Filter>Quelldateien\Scene\Object</Filter>
+    </ClCompile>
+    <ClCompile Include="CMeshComponent.cpp">
+      <Filter>Quelldateien\Scene\Object\Components</Filter>
+    </ClCompile>
+    <ClCompile Include="IComponent.cpp">
+      <Filter>Quelldateien\Scene\Object\Components</Filter>
+    </ClCompile>
+    <ClCompile Include="IIdentifiable.cpp">
+      <Filter>Quelldateien\Utils</Filter>
+    </ClCompile>
+    <ClCompile Include="CRenderComponent.cpp">
+      <Filter>Quelldateien\Scene\Object\Components</Filter>
+    </ClCompile>
+    <ClCompile Include="CTestUpdateComponent.cpp">
+      <Filter>Quelldateien\Scene\Object\Components</Filter>
     </ClCompile>
   </ItemGroup>
   <ItemGroup>
@@ -57,7 +84,25 @@
       <Filter>Headerdateien\Scene\Object</Filter>
     </ClInclude>
     <ClInclude Include="IComponent.h">
-      <Filter>Headerdateien\Scene\Object</Filter>
+      <Filter>Headerdateien\Scene\Object\Components</Filter>
+    </ClInclude>
+    <ClInclude Include="CMeshComponent.h">
+      <Filter>Headerdateien\Scene\Object\Components</Filter>
+    </ClInclude>
+    <ClInclude Include="IIdentifiable.h">
+      <Filter>Headerdateien\Utils</Filter>
+    </ClInclude>
+    <ClInclude Include="CRenderComponent.h">
+      <Filter>Headerdateien\Scene\Object\Components</Filter>
+    </ClInclude>
+    <ClInclude Include="IUpdateable.h">
+      <Filter>Headerdateien\Utils</Filter>
+    </ClInclude>
+    <ClInclude Include="CTestUpdateComponent.h">
+      <Filter>Headerdateien\Scene\Object\Components</Filter>
+    </ClInclude>
+    <ClInclude Include="IService.h">
+      <Filter>Headerdateien\Utils</Filter>
     </ClInclude>
   </ItemGroup>
 </Project>
